@@ -1,0 +1,16 @@
+<div class="w-screen h-screen flex items-center justify-center bg-orange-50 bg-opacity-90">
+  <.form id="invite_form" let={f} for={@changeset} url="#" phx-submit="submit">
+    <div class="bg-white w-full md:w-auto px-8 py-12 rounded-sm flex flex-col items-center" style="box-shadow: -0.5rem 0.5rem #ffedd5;">
+      <div class="text-stone-400 mt-4 mb-8 w-64 text-center leading-8">
+        Sign up
+      </div>
+      <div class="mb-6 w-full">
+        <.input f={f} name={:name} />
+      </div>
+      <div class="mb-6 w-full">
+        <.input f={f} name={:email} />
+      </div>
+      <.button label="submit" />
+    </div>
+  </.form>
+</div>
